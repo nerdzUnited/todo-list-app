@@ -17,6 +17,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.507);
 }
 
 h2 {
@@ -31,15 +32,82 @@ p {
   font-size: 1.3rem;
 }
 
+#input-row {
+  width: 90%;
+  display: flex;
+}
+
 input {
   padding: 4px;
   margin: 0;
+  flex-grow: 1;
 }
 
-ul {
+#submit {
+  background-color: rgba(0, 223, 149, 0.589);
+  padding: 7px 10px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 1.8px solid rgba(0, 0, 0, 0.24);
+}
+
+.fa-plus {
+  margin: 0 !important;
+}
+
+#btn-row button {
+  text-transform: uppercase;
+  height: 1.8rem;
+  padding: 4px 8px;
+  text-align: right;
+  border: none;
+  background-color: rgb(241, 194, 127);
+  margin: 10px 5px 22px 5px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.233);
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.fa-circle-minus {
+  color: rgb(179, 6, 6);
+}
+
+.fa-trash-can {
+  color: rgb(80, 80, 80);
+}
+
+#btn-row button i {
+  font-size: 1rem;
+  margin: 0 0 0 5px;
+}
+
+#list-container {
+  width: 100%;
+}
+
+#todo-list {
   list-style-type: none;
+  text-align: right;
 }
 
-li {
+.todo-item {
   font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1.5rem;
+  margin: 0.6rem;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: rgb(1, 79, 53);
+  color: white;
+}
+
+.fa-solid {
+  margin: 0 8px 0 13px;
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+  background-color: rgba(1, 130, 121, 0.632);
+  color: rgb(230, 209, 192);
 }
